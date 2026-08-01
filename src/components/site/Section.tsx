@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { Reveal } from "./Reveal";
 
 export function Section({
   children,
@@ -14,7 +15,7 @@ export function Section({
   return (
     <section
       id={id}
-      className={`py-20 md:py-28 ${muted ? "bg-[color:var(--surface)]" : ""} ${className}`}
+      className={`py-24 md:py-32 ${muted ? "bg-[color:var(--surface)]" : ""} ${className}`}
     >
       <div className="container-page">{children}</div>
     </section>
@@ -33,25 +34,25 @@ export function SectionHeader({
   align?: "center" | "left";
 }) {
   return (
-    <div
-      className={`max-w-2xl mb-14 ${
+    <Reveal
+      className={`mb-16 max-w-2xl ${
         align === "center" ? "mx-auto text-center" : "text-left"
       }`}
     >
       {eyebrow && (
-        <span className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-3 py-1 text-xs font-medium text-primary shadow-soft">
+        <span className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-3.5 py-1.5 text-xs font-semibold uppercase tracking-[0.14em] text-primary shadow-soft">
           <span className="h-1.5 w-1.5 rounded-full bg-[color:var(--emerald-brand)]" />
           {eyebrow}
         </span>
       )}
-      <h2 className="mt-4 text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground">
+      <h2 className="mt-5 text-balance text-3xl font-semibold tracking-tight text-foreground md:text-4xl lg:text-[2.75rem] lg:leading-[1.1]">
         {title}
       </h2>
       {description && (
-        <p className="mt-4 text-base md:text-lg text-muted-foreground leading-relaxed">
+        <p className="mt-5 text-pretty text-base leading-relaxed text-muted-foreground md:text-lg">
           {description}
         </p>
       )}
-    </div>
+    </Reveal>
   );
 }
