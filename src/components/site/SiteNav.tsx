@@ -1,7 +1,9 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Phone, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Logo } from "./Logo";
+import { PHONE_DISPLAY, PHONE_TEL } from "@/lib/contact";
 
 const links = [
   { to: "/", label: "Home" },
@@ -27,53 +29,60 @@ export function SiteNav() {
     <header
       className={`sticky top-0 z-50 w-full transition-all duration-300 ${
         scrolled
-          ? "bg-background/85 backdrop-blur-md border-b border-border shadow-soft"
+          ? "border-b border-border bg-background/85 shadow-soft backdrop-blur-md"
           : "bg-background/60 backdrop-blur-sm"
       }`}
     >
-      <div className="container-page flex h-16 items-center justify-between md:h-20">
-        <Link to="/" className="flex items-center gap-2 group" onClick={() => setOpen(false)}>
-          <span className="grid h-9 w-9 place-items-center rounded-xl bg-primary text-primary-foreground font-display font-bold shadow-glow transition-transform group-hover:scale-105">
-            D
-          </span>
-          <span className="font-display text-lg font-semibold tracking-tight text-foreground">
-            Dlamini <span className="text-primary">Web Studio</span>
-          </span>
-        </Link>
+      <div className="container-page grid h-16 grid-cols-[minmax(0,1fr)_auto] items-center gap-4 md:h-20">
+        <Logo onClick={() => setOpen(false)} />
 
-        <nav className="hidden md:flex items-center gap-1">
-          {links.map((l) => (
-            <Link
-              key={l.to}
-              to={l.to}
-              activeOptions={{ exact: l.to === "/" }}
-              className="px-3 py-2 text-sm font-medium text-muted-foreground rounded-md hover:text-foreground transition-colors"
-              activeProps={{ className: "text-foreground" }}
-            >
-              {l.label}
+        <div className="flex items-center gap-2">
+          <nav className="hidden items-center gap-1 lg:flex">
+            {links.map((l) => (
+              <Link
+                key={l.to}
+                to={l.to}
+                activeOptions={{ exact: l.to === "/" }}
+                className="relative rounded-md px-3 py-2 text-sm font-medium text-muted-foreground transition-colors after:absolute after:inset-x-3 after:-bottom-0.5 after:h-0.5 after:origin-left after:scale-x-0 after:rounded-full after:bg-primary after:transition-transform after:duration-300 hover:text-foreground hover:after:scale-x-100"
+                activeProps={{ className: "text-foreground after:scale-x-100" }}
+              >
+                {l.label}
+              </Link>
+            ))}
+          </nav>
+
+          <a
+            href={`tel:${PHONE_TEL}`}
+            className="hidden items-center gap-2 rounded-full border border-border px-4 py-2 text-sm font-medium text-foreground transition-colors hover:border-primary/40 hover:text-primary xl:inline-flex"
+          >
+            <Phone className="h-4 w-4 text-[color:var(--emerald-brand)]" />
+            {PHONE_DISPLAY}
+          </a>
+
+          <Button
+            asChild
+            size="lg"
+            className="btn-shine hidden rounded-full shadow-glow transition-transform duration-300 hover:-translate-y-0.5 md:inline-flex"
+          >
+            <Link to="/contact">
+              Get a Free Quote <ArrowRight className="ml-1 h-4 w-4" />
             </Link>
-          ))}
-        </nav>
-
-        <div className="hidden md:block">
-          <Button asChild size="lg" className="rounded-full shadow-glow">
-            <Link to="/contact">Get a Free Quote</Link>
           </Button>
-        </div>
 
-        <button
-          type="button"
-          aria-label="Toggle navigation"
-          aria-expanded={open}
-          onClick={() => setOpen((v) => !v)}
-          className="md:hidden inline-flex h-10 w-10 items-center justify-center rounded-lg border border-border bg-background text-foreground"
-        >
-          {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-        </button>
+          <button
+            type="button"
+            aria-label="Toggle navigation"
+            aria-expanded={open}
+            onClick={() => setOpen((v) => !v)}
+            className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-border bg-background text-foreground lg:hidden"
+          >
+            {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </button>
+        </div>
       </div>
 
       {open && (
-        <div className="md:hidden border-t border-border bg-background">
+        <div className="border-t border-border bg-background lg:hidden">
           <nav className="container-page flex flex-col py-3">
             {links.map((l) => (
               <Link
@@ -87,8 +96,23 @@ export function SiteNav() {
                 {l.label}
               </Link>
             ))}
-            <Button asChild size="lg" className="mt-3 rounded-full" onClick={() => setOpen(false)}>
+            <Button
+              asChild
+              size="lg"
+              className="btn-shine mt-3 rounded-full"
+              onClick={() => setOpen(false)}
+            >
               <Link to="/contact">Get a Free Quote</Link>
+            </Button>
+            <Button
+              asChild
+              size="lg"
+              variant="outline"
+              className="mt-2 rounded-full"
+            >
+              <a href={`tel:${PHONE_TEL}`}>
+                <Phone className="mr-1.5 h-4 w-4" /> Call {PHONE_DISPLAY}
+              </a>
             </Button>
           </nav>
         </div>

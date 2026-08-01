@@ -80,27 +80,27 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Dlamini Web Studio — Professional Websites for South African Businesses" },
+      { title: "Alwande Web Studio — Professional Websites for SA Businesses" },
       {
         name: "description",
         content:
-          "Dlamini Web Studio designs fast, beautiful and SEO-friendly websites that help South African small businesses attract customers, build trust and grow.",
+          "Alwande Web Studio designs fast, beautiful and SEO-optimized websites that help South African small businesses attract customers, build trust and grow.",
       },
-      { name: "author", content: "Dlamini Web Studio" },
+      { name: "author", content: "Alwande Web Studio" },
       { name: "theme-color", content: "#0F172A" },
-      { property: "og:site_name", content: "Dlamini Web Studio" },
+      { property: "og:site_name", content: "Alwande Web Studio" },
       { property: "og:type", content: "website" },
-      { property: "og:title", content: "Dlamini Web Studio — Professional Websites for South African Businesses" },
+      { property: "og:title", content: "Alwande Web Studio — Professional Websites for SA Businesses" },
       {
         property: "og:description",
         content:
-          "Fast, beautiful and SEO-friendly websites for small businesses across South Africa.",
+          "Fast, beautiful and SEO-optimized websites for small businesses across South Africa.",
       },
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "icon", href: "/favicon.png", type: "image/png" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
@@ -114,20 +114,20 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          name: "Dlamini Web Studio",
+          name: "Alwande Web Studio",
           description:
-            "South African web design agency building fast, SEO-friendly websites for small businesses.",
+            "South African web design agency building fast, SEO-optimized websites for small businesses.",
           areaServed: "ZA",
           address: {
             "@type": "PostalAddress",
             addressCountry: "ZA",
-            addressLocality: "Johannesburg",
           },
-          email: "hello@dlaminiweb.co.za",
-          telephone: "+27820000000",
+          email: "alwandewebstudio@gmail.com",
+          telephone: "+27685698680",
         }),
       },
     ],
+
   }),
   shellComponent: RootShell,
   component: RootComponent,
