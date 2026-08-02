@@ -91,16 +91,8 @@ const projects = [
     results: ["+90% quote requests", "Fast on 3G"],
     tags: ["Quote form", "Gallery", "Speed"],
   },
-  {
-    img: workConsulting,
-    name: "Summit Consulting",
-    category: "Landing Page",
-    brief:
-      "High-converting consultancy landing page with pricing tiers and a single clear call to action.",
-    results: ["4.8% conversion rate", "Ads ready"],
-    tags: ["Landing page", "Pricing", "CRO"],
-  },
 ];
+
 
 function PortfolioPage() {
   return (
