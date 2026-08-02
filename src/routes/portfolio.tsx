@@ -5,12 +5,13 @@ import { Section, SectionHeader } from "@/components/site/Section";
 import { Reveal } from "@/components/site/Reveal";
 import { TrustBadges } from "@/components/site/TrustBadges";
 import { WHATSAPP_URL } from "@/lib/contact";
+import workDlokovu from "@/assets/work-dlokovu.jpg";
 import workBoutique from "@/assets/work-boutique.jpg";
 import workRestaurant from "@/assets/work-restaurant.jpg";
 import workLaw from "@/assets/work-law.jpg";
 import workSalon from "@/assets/work-salon.jpg";
 import workConstruction from "@/assets/work-construction.jpg";
-import workConsulting from "@/assets/work-consulting.jpg";
+
 
 export const Route = createFileRoute("/portfolio")({
   head: () => ({
@@ -35,6 +36,16 @@ export const Route = createFileRoute("/portfolio")({
 
 const projects = [
   {
+    img: workDlokovu,
+    name: "Dlokovu Funerals",
+    category: "Funeral Services",
+    real: true,
+    brief:
+      "A dignified funeral services website with elegant black-and-gold branding, clear service pages and a fully mobile-responsive layout.",
+    results: ["Live client project", "Mobile responsive"],
+    tags: ["Black & gold branding", "Responsive", "Local SEO"],
+  },
+  {
     img: workBoutique,
     name: "Lumière Boutique",
     category: "E-Commerce",
@@ -43,6 +54,7 @@ const projects = [
     results: ["+62% online sales", "0.9s load time"],
     tags: ["Online store", "Payments", "SEO"],
   },
+
   {
     img: workRestaurant,
     name: "Marra Restaurant",
@@ -79,16 +91,8 @@ const projects = [
     results: ["+90% quote requests", "Fast on 3G"],
     tags: ["Quote form", "Gallery", "Speed"],
   },
-  {
-    img: workConsulting,
-    name: "Summit Consulting",
-    category: "Landing Page",
-    brief:
-      "High-converting consultancy landing page with pricing tiers and a single clear call to action.",
-    results: ["4.8% conversion rate", "Ads ready"],
-    tags: ["Landing page", "Pricing", "CRO"],
-  },
 ];
+
 
 function PortfolioPage() {
   return (
@@ -115,9 +119,17 @@ function PortfolioPage() {
                   />
                 </div>
                 <div className="p-7">
-                  <p className="text-xs font-semibold uppercase tracking-[0.14em] text-primary">
-                    {p.category}
-                  </p>
+                  <div className="flex flex-wrap items-center gap-2">
+                    <p className="text-xs font-semibold uppercase tracking-[0.14em] text-primary">
+                      {p.category}
+                    </p>
+                    {"real" in p && p.real ? (
+                      <span className="rounded-full bg-[color:var(--emerald-brand)] px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white">
+                        Completed project
+                      </span>
+                    ) : null}
+                  </div>
+
                   <h3 className="mt-1.5 font-display text-lg font-semibold text-foreground">
                     {p.name}
                   </h3>
