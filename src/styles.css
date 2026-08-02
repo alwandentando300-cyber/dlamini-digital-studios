@@ -273,3 +273,14 @@
   }
 }
 
+/* Sonner toast palette override */
+.toaster {
+  --normal-bg: var(--background);
+  --normal-text: var(--foreground);
+  --normal-border: var(--border);
+  --success-bg: var(--emerald-brand);
+  --success-text: #FFFFFF;
+  --error-bg: var(--navy);
+  --error-text: #FFFFFF;
+}
+
