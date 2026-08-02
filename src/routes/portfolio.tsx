@@ -119,9 +119,17 @@ function PortfolioPage() {
                   />
                 </div>
                 <div className="p-7">
-                  <p className="text-xs font-semibold uppercase tracking-[0.14em] text-primary">
-                    {p.category}
-                  </p>
+                  <div className="flex flex-wrap items-center gap-2">
+                    <p className="text-xs font-semibold uppercase tracking-[0.14em] text-primary">
+                      {p.category}
+                    </p>
+                    {"real" in p && p.real ? (
+                      <span className="rounded-full bg-[color:var(--emerald-brand)] px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white">
+                        Completed project
+                      </span>
+                    ) : null}
+                  </div>
+
                   <h3 className="mt-1.5 font-display text-lg font-semibold text-foreground">
                     {p.name}
                   </h3>
