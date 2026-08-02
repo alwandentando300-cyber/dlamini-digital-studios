@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import logo from "@/assets/logo-alwande.png";
+import logoAsset from "@/assets/alwande-logo.jpg.asset.json";
 
 export function Logo({
   onClick,
@@ -15,21 +15,20 @@ export function Logo({
       to="/"
       onClick={onClick}
       aria-label="Alwande Web Studio — home"
-      className={`group flex min-w-0 items-center gap-2.5 ${className}`}
+      className={`group flex min-w-0 items-center ${className}`}
     >
-      <img
-        src={logo}
-        alt=""
-        width={816}
-        height={816}
-        className="h-9 w-9 shrink-0 transition-transform duration-300 group-hover:scale-110 md:h-10 md:w-10"
-      />
       <span
-        className={`truncate font-display text-base font-semibold tracking-tight sm:text-lg ${
-          variant === "dark" ? "text-white" : "text-foreground"
+        className={`inline-flex items-center overflow-hidden rounded-xl bg-[color:var(--navy)] px-3 py-2 transition-transform duration-300 group-hover:scale-[1.03] ${
+          variant === "dark" ? "" : "ring-1 ring-border"
         }`}
       >
-        Alwande <span className="text-primary">Web Studio</span>
+        <img
+          src={logoAsset.url}
+          alt="Alwande Web Studio"
+          width={1536}
+          height={413}
+          className="h-7 w-auto md:h-8"
+        />
       </span>
     </Link>
   );
