@@ -5,12 +5,13 @@ import { Section, SectionHeader } from "@/components/site/Section";
 import { Reveal } from "@/components/site/Reveal";
 import { TrustBadges } from "@/components/site/TrustBadges";
 import { WHATSAPP_URL } from "@/lib/contact";
+import workDlokovu from "@/assets/work-dlokovu.jpg";
 import workBoutique from "@/assets/work-boutique.jpg";
 import workRestaurant from "@/assets/work-restaurant.jpg";
 import workLaw from "@/assets/work-law.jpg";
 import workSalon from "@/assets/work-salon.jpg";
 import workConstruction from "@/assets/work-construction.jpg";
-import workConsulting from "@/assets/work-consulting.jpg";
+
 
 export const Route = createFileRoute("/portfolio")({
   head: () => ({
