@@ -76,8 +76,9 @@ const process = [
 ];
 
 const work = [
+  { img: workDlokovu, name: "Dlokovu Funerals", cat: "Funeral Services" },
   { img: workBoutique, name: "Lumière Boutique", cat: "E-Commerce" },
-  { img: workRestaurant, name: "Marra Restaurant", cat: "Hospitality" },
+
   { img: workConstruction, name: "Summit Builders", cat: "Local Business" },
 ];
 
