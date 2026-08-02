@@ -36,6 +36,16 @@ export const Route = createFileRoute("/portfolio")({
 
 const projects = [
   {
+    img: workDlokovu,
+    name: "Dlokovu Funerals",
+    category: "Funeral Services",
+    real: true,
+    brief:
+      "A dignified funeral services website with elegant black-and-gold branding, clear service pages and a fully mobile-responsive layout.",
+    results: ["Live client project", "Mobile responsive"],
+    tags: ["Black & gold branding", "Responsive", "Local SEO"],
+  },
+  {
     img: workBoutique,
     name: "Lumière Boutique",
     category: "E-Commerce",
@@ -44,6 +54,7 @@ const projects = [
     results: ["+62% online sales", "0.9s load time"],
     tags: ["Online store", "Payments", "SEO"],
   },
+
   {
     img: workRestaurant,
     name: "Marra Restaurant",
