@@ -19,7 +19,9 @@ import { Reveal } from "@/components/site/Reveal";
 import { TrustBadges } from "@/components/site/TrustBadges";
 import { EMAIL, PHONE_DISPLAY, PHONE_TEL, WHATSAPP_URL } from "@/lib/contact";
 import heroMockup from "@/assets/hero-mockup.jpg";
+import workDlokovu from "@/assets/work-dlokovu.jpg";
 import workBoutique from "@/assets/work-boutique.jpg";
+
 import workRestaurant from "@/assets/work-restaurant.jpg";
 import workConstruction from "@/assets/work-construction.jpg";
 
