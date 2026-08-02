@@ -18,7 +18,7 @@ export function Logo({
       className={`group flex min-w-0 items-center ${className}`}
     >
       <span
-        className={`inline-flex items-center overflow-hidden rounded-xl bg-[color:var(--navy)] px-2.5 py-1.5 transition-transform duration-300 group-hover:scale-[1.03] ${
+        className={`inline-flex items-center overflow-hidden rounded-xl bg-[color:var(--navy)] px-3 py-0.5 transition-transform duration-300 group-hover:scale-[1.03] ${
           variant === "dark" ? "" : "ring-1 ring-border"
         }`}
       >
@@ -27,9 +27,8 @@ export function Logo({
           alt="Alwande Web Studio"
           width={1536}
           height={413}
-          className="h-9 w-auto md:h-11"
+          className="h-14 w-auto md:h-16"
         />
-
       </span>
     </Link>
   );
