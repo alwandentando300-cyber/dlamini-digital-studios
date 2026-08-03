@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
-import logoAsset from "@/assets/alwande-logo.jpg.asset.json";
+import logoLight from "@/assets/alwande-logo.png.asset.json";
+import logoDark from "@/assets/alwande-logo-dark.png.asset.json";
 
 export function Logo({
   onClick,
@@ -10,6 +11,8 @@ export function Logo({
   variant?: "light" | "dark";
   className?: string;
 }) {
+  const src = variant === "dark" ? logoDark.url : logoLight.url;
+
   return (
     <Link
       to="/"
@@ -17,19 +20,13 @@ export function Logo({
       aria-label="Alwande Web Studio — home"
       className={`group flex min-w-0 items-center ${className}`}
     >
-      <span
-        className={`inline-flex items-center overflow-hidden rounded-xl bg-[color:var(--navy)] px-3 py-0.5 transition-transform duration-300 group-hover:scale-[1.03] ${
-          variant === "dark" ? "" : "ring-1 ring-border"
-        }`}
-      >
-        <img
-          src={logoAsset.url}
-          alt="Alwande Web Studio"
-          width={1536}
-          height={413}
-          className="h-14 w-auto md:h-16"
-        />
-      </span>
+      <img
+        src={src}
+        alt="Alwande Web Studio"
+        width={780}
+        height={187}
+        className="h-11 w-auto bg-transparent transition-transform duration-300 group-hover:scale-[1.03] md:h-14"
+      />
     </Link>
   );
 }
