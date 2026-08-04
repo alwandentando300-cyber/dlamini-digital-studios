@@ -167,9 +167,9 @@ function ServicesPage() {
                 <div className="grid h-12 w-12 place-items-center rounded-xl bg-primary/10 text-primary">
                   <s.icon className="h-6 w-6" />
                 </div>
-                <h3 className="mt-5 font-display text-xl font-semibold text-foreground">
+                <h2 className="mt-5 font-display text-xl font-semibold text-foreground">
                   {s.title}
-                </h3>
+                </h2>
                 <p className="mt-2.5 leading-relaxed text-muted-foreground">
                   {s.copy}
                 </p>

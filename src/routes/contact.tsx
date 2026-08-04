@@ -116,9 +116,9 @@ function ContactPage() {
                 <div className="mx-auto grid h-14 w-14 place-items-center rounded-full bg-[color:var(--emerald-brand)]/15 text-[color:var(--emerald-brand)]">
                   <CheckCircle2 className="h-7 w-7" />
                 </div>
-                <h3 className="mt-6 font-display text-2xl font-semibold text-foreground">
+                <h2 className="mt-6 font-display text-2xl font-semibold text-foreground">
                   Almost there
-                </h3>
+                </h2>
                 <p className="mx-auto mt-3 max-w-md leading-relaxed text-muted-foreground">
                   We've opened your email app with your enquiry ready to send to{" "}
                   {EMAIL}. If nothing opened, WhatsApp us instead — it's the
