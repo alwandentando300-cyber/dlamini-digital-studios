@@ -103,8 +103,9 @@ function ContactPage() {
     <Section>
       <SectionHeader
         eyebrow="Contact"
-        title="Let's build something great together"
+        title="Get a Free Website Quote"
         description="Tell us about your business and we'll come back with a free, no-obligation quote within one business day."
+        titleAs="h1"
       />
 
       <div className="grid gap-8 lg:grid-cols-5">

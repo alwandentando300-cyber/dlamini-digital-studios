@@ -63,8 +63,9 @@ function FAQPage() {
     <Section>
       <SectionHeader
         eyebrow="FAQ"
-        title="Frequently asked questions"
+        title="Frequently Asked Questions"
         description="Can't find what you're looking for? We're happy to answer any question."
+        titleAs="h1"
       />
       <div className="mx-auto max-w-3xl">
         <Reveal>

@@ -100,8 +100,9 @@ function PortfolioPage() {
       <Section>
         <SectionHeader
           eyebrow="Portfolio"
-          title="Websites designed to grow the businesses we love"
+          title="Our Website Design Portfolio"
           description="A selection of recent work across e-commerce, hospitality, professional services, trades and lead generation."
+          titleAs="h1"
         />
 
         <div className="grid gap-7 md:grid-cols-2 lg:grid-cols-3">

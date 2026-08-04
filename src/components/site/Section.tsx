@@ -27,12 +27,15 @@ export function SectionHeader({
   title,
   description,
   align = "center",
+  titleAs = "h2",
 }: {
   eyebrow?: string;
   title: string;
   description?: string;
   align?: "center" | "left";
+  titleAs?: "h1" | "h2";
 }) {
+  const TitleTag = titleAs;
   return (
     <Reveal
       className={`mb-16 max-w-2xl ${
@@ -45,9 +48,9 @@ export function SectionHeader({
           {eyebrow}
         </span>
       )}
-      <h2 className="mt-5 text-balance text-3xl font-semibold tracking-tight text-foreground md:text-4xl lg:text-[2.75rem] lg:leading-[1.1]">
+      <TitleTag className="mt-5 text-balance text-3xl font-semibold tracking-tight text-foreground md:text-4xl lg:text-[2.75rem] lg:leading-[1.1]">
         {title}
-      </h2>
+      </TitleTag>
       {description && (
         <p className="mt-5 text-pretty text-base leading-relaxed text-muted-foreground md:text-lg">
           {description}

@@ -156,8 +156,9 @@ function ServicesPage() {
       <Section>
         <SectionHeader
           eyebrow="Services"
-          title="Everything your business needs to grow online"
+          title="Web Design & SEO Services"
           description="From custom web design and redesigns to landing pages, SEO and ongoing care — we handle every part of your digital presence."
+          titleAs="h1"
         />
         <div className="grid gap-7 md:grid-cols-2 lg:grid-cols-3">
           {services.map((s, i) => (
