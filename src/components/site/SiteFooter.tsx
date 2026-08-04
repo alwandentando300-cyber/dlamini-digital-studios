@@ -39,7 +39,7 @@ export function SiteFooter() {
         </div>
 
         <div>
-          <h4 className="mb-4 font-display font-semibold text-white">Explore</h4>
+          <h2 className="mb-4 font-display text-base font-semibold text-white">Explore</h2>
           <ul className="space-y-2.5 text-sm">
             <li><Link to="/services" className="transition-colors hover:text-white">Services</Link></li>
             <li><Link to="/portfolio" className="transition-colors hover:text-white">Portfolio</Link></li>
@@ -50,7 +50,7 @@ export function SiteFooter() {
         </div>
 
         <div>
-          <h4 className="mb-4 font-display font-semibold text-white">Contact</h4>
+          <h2 className="mb-4 font-display text-base font-semibold text-white">Contact</h2>
           <ul className="space-y-3 text-sm">
             <li>
               <a href={`mailto:${EMAIL}`} className="flex items-start gap-2 break-all transition-colors hover:text-white">

@@ -131,9 +131,9 @@ function PortfolioPage() {
                     ) : null}
                   </div>
 
-                  <h3 className="mt-1.5 font-display text-lg font-semibold text-foreground">
+                  <h2 className="mt-1.5 font-display text-lg font-semibold text-foreground">
                     {p.name}
-                  </h3>
+                  </h2>
                   <p className="mt-2.5 text-sm leading-relaxed text-muted-foreground">
                     {p.brief}
                   </p>
