@@ -247,9 +247,9 @@ function ServicesPage() {
                 <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3.5 py-1.5 text-xs font-semibold uppercase tracking-[0.14em] text-[color:var(--emerald-brand)]">
                   <Sparkles className="h-3.5 w-3.5" /> Something bigger in mind?
                 </span>
-                <h2 className="mt-5 text-balance font-display text-2xl font-semibold text-white md:text-3xl">
+                <h3 className="mt-5 text-balance font-display text-2xl font-semibold text-white md:text-3xl">
                   Request a custom quote
-                </h2>
+                </h3>
                 <p className="mt-3 max-w-xl leading-relaxed text-white/70">
                   Multi-language sites, booking systems, integrations or a full
                   brand refresh — tell us what you need and we'll price it
