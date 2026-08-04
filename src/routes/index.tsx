@@ -29,7 +29,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       {
-        title: "Alwande Web Studio — Professional Websites That Help You Grow",
+        title: "Alwande Web Studio — Websites That Help You Grow",
       },
       {
         name: "description",
@@ -38,7 +38,7 @@ export const Route = createFileRoute("/")({
       },
       {
         property: "og:title",
-        content: "Alwande Web Studio — Professional Websites That Help You Grow",
+        content: "Alwande Web Studio — Websites That Help You Grow",
       },
       {
         property: "og:description",

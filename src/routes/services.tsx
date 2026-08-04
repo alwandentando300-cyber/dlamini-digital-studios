@@ -20,13 +20,13 @@ import { WHATSAPP_URL } from "@/lib/contact";
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "Services — Web Design, Redesign, SEO & Landing Pages | Alwande Web Studio" },
+      { title: "Web Design, SEO & E-Commerce Services | Alwande Web Studio" },
       {
         name: "description",
         content:
           "Custom web design, website redesigns, landing pages, SEO, e-commerce and care plans for South African small businesses. Transparent pricing from R3 500.",
       },
-      { property: "og:title", content: "Services | Alwande Web Studio" },
+      { property: "og:title", content: "Web Design, SEO & E-Commerce Services | Alwande Web Studio" },
       {
         property: "og:description",
         content:

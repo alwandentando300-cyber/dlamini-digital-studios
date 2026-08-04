@@ -80,7 +80,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Alwande Web Studio — Professional Websites for SA Businesses" },
+      { title: "Alwande Web Studio — Professional South African Web Design" },
       {
         name: "description",
         content:
@@ -90,7 +90,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "theme-color", content: "#0F172A" },
       { property: "og:site_name", content: "Alwande Web Studio" },
       { property: "og:type", content: "website" },
-      { property: "og:title", content: "Alwande Web Studio — Professional Websites for SA Businesses" },
+      { property: "og:title", content: "Alwande Web Studio — Professional South African Web Design" },
       {
         property: "og:description",
         content:
