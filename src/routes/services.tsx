@@ -35,6 +35,61 @@ export const Route = createFileRoute("/services")({
       { property: "og:url", content: "/services" },
     ],
     links: [{ rel: "canonical", href: "/services" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify([
+          {
+            "@context": "https://schema.org",
+            "@type": "Product",
+            name: "Starter Website Package",
+            description:
+              "Up to 5 pages, mobile-friendly design, basic SEO setup, contact form and WhatsApp button.",
+            brand: { "@type": "Brand", name: "Alwande Web Studio" },
+            category: "Web Design",
+            offers: {
+              "@type": "Offer",
+              price: "3500",
+              priceCurrency: "ZAR",
+              availability: "https://schema.org/InStock",
+              url: "https://alwandewebstudio.co.za/services",
+            },
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "Product",
+            name: "Business Website Package",
+            description:
+              "Up to 10 pages, fully custom design, advanced SEO setup, blog/CMS integration, Google Analytics & Search Console.",
+            brand: { "@type": "Brand", name: "Alwande Web Studio" },
+            category: "Web Design",
+            offers: {
+              "@type": "Offer",
+              price: "6500",
+              priceCurrency: "ZAR",
+              availability: "https://schema.org/InStock",
+              url: "https://alwandewebstudio.co.za/services",
+            },
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "Product",
+            name: "Premium Website Package",
+            description:
+              "Unlimited pages, e-commerce or online bookings, full SEO strategy, copywriting support and priority support.",
+            brand: { "@type": "Brand", name: "Alwande Web Studio" },
+            category: "Web Design",
+            offers: {
+              "@type": "Offer",
+              price: "12000",
+              priceCurrency: "ZAR",
+              availability: "https://schema.org/InStock",
+              url: "https://alwandewebstudio.co.za/services",
+            },
+          },
+        ]),
+      },
+    ],
   }),
   component: ServicesPage,
 });
