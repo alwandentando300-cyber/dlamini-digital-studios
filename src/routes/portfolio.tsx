@@ -30,6 +30,22 @@ export const Route = createFileRoute("/portfolio")({
       { property: "og:url", content: "/portfolio" },
     ],
     links: [{ rel: "canonical", href: "/portfolio" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify(
+          projects.map((p) => ({
+            "@context": "https://schema.org",
+            "@type": "Product",
+            name: `${p.name} — Website by Alwande Web Studio`,
+            description: p.brief,
+            category: p.category,
+            brand: { "@type": "Brand", name: "Alwande Web Studio" },
+            url: "https://alwandewebstudio.co.za/portfolio",
+          }))
+        ),
+      },
+    ],
   }),
   component: PortfolioPage,
 });
