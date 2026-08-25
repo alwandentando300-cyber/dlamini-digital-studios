@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://dlamini-web-studio.lovable.app/sitemap.xml
