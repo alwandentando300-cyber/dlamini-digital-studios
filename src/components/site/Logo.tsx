@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
-import logoLight from "@/assets/alwande-logo.png.asset.json";
-import logoDark from "@/assets/alwande-logo-dark.png.asset.json";
+import logoLight from "@/assets/alwande-logo.png";
+import logoDark from "@/assets/alwande-logo-dark.png";
 
 export function Logo({
   onClick,
