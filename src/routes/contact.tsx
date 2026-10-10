@@ -21,6 +21,7 @@ import {
   LOCATION,
   PHONE_DISPLAY,
   PHONE_TEL,
+  WHATSAPP_DISPLAY,
   WHATSAPP_URL,
   buildEnquiryMailto,
 } from "@/lib/contact";
@@ -32,7 +33,7 @@ export const Route = createFileRoute("/contact")({
       {
         name: "description",
         content:
-          "Contact Alwande Web Studio for a free website quote. Email alwandewebstudio@gmail.com or WhatsApp 068 569 8680 — we reply within one business day.",
+          "Contact Alwande Web Studio for a free website quote. Email alwandewebstudio@gmail.com or WhatsApp 068 076 2227 — we reply within one business day.",
       },
       { property: "og:title", content: "Contact | Alwande Web Studio" },
       {
@@ -274,7 +275,7 @@ function ContactPage() {
               <InfoBody
                 icon={MessageCircle}
                 title="WhatsApp"
-                value={`${PHONE_DISPLAY} — fastest reply`}
+                value={`${WHATSAPP_DISPLAY} — fastest reply`}
               />
             </a>
           </Reveal>

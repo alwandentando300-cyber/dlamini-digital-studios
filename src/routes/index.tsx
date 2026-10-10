@@ -17,7 +17,12 @@ import { Button } from "@/components/ui/button";
 import { Section, SectionHeader } from "@/components/site/Section";
 import { Reveal } from "@/components/site/Reveal";
 import { TrustBadges } from "@/components/site/TrustBadges";
-import { EMAIL, PHONE_DISPLAY, PHONE_TEL, WHATSAPP_URL } from "@/lib/contact";
+import {
+  EMAIL,
+  PHONE_TEL,
+  WHATSAPP_DISPLAY,
+  WHATSAPP_URL,
+} from "@/lib/contact";
 import heroMockup from "@/assets/hero-mockup.jpg";
 import workDlokovu from "@/assets/work-dlokovu.jpg";
 import workBoutique from "@/assets/work-boutique.jpg";
@@ -34,7 +39,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Alwande Web Studio builds fast, responsive, SEO-optimized websites for South African small businesses. Free quotes from R3 500 — WhatsApp 068 569 8680.",
+          "Alwande Web Studio builds fast, responsive, SEO-optimized websites for South African small businesses. Free quotes from R3 500 — WhatsApp 068 076 2227.",
       },
       {
         property: "og:title",
@@ -167,7 +172,7 @@ function HomePage() {
                   className="inline-flex items-center gap-2 font-medium text-foreground transition-colors hover:text-[color:var(--emerald-brand)]"
                 >
                   <MessageCircle className="h-4 w-4 text-[color:var(--emerald-brand)]" />
-                  WhatsApp {PHONE_DISPLAY}
+                  WhatsApp {WHATSAPP_DISPLAY}
                 </a>
                 <a
                   href={`tel:${PHONE_TEL}`}
@@ -420,7 +425,7 @@ function HomePage() {
                   >
                     <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
                       <MessageCircle className="mr-1.5 h-4 w-4" /> WhatsApp{" "}
-                      {PHONE_DISPLAY}
+                      {WHATSAPP_DISPLAY}
                     </a>
                   </Button>
                 </div>
