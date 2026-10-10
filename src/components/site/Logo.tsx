@@ -11,7 +11,7 @@ export function Logo({
   variant?: "light" | "dark";
   className?: string;
 }) {
-  const src = variant === "dark" ? logoDark.url : logoLight.url;
+  const src = variant === "dark" ? logoDark : logoLight;
 
   return (
     <Link
