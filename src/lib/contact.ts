@@ -2,8 +2,9 @@ export const BRAND = "Alwande Web Studio";
 export const EMAIL = "alwandewebstudio@gmail.com";
 export const PHONE_DISPLAY = "068 569 8680";
 export const PHONE_TEL = "+27685698680";
+export const WHATSAPP_DISPLAY = "068 076 2227";
 export const WHATSAPP_URL =
-  "https://wa.me/27685698680?text=" +
+  "https://wa.me/27680762227?text=" +
   encodeURIComponent("Hi Alwande Web Studio, I'd like a free website quote.");
 export const MAILTO = `mailto:${EMAIL}?subject=${encodeURIComponent(
   "Website enquiry",

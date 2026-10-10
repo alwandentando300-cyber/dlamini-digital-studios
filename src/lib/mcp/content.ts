@@ -7,7 +7,8 @@ export const studio = {
   email: "alwandewebstudio@gmail.com",
   phone: "068 569 8680",
   phoneInternational: "+27685698680",
-  whatsapp: "https://wa.me/27685698680",
+  whatsappPhone: "068 076 2227",
+  whatsapp: "https://wa.me/27680762227",
   summary:
     "Alwande Web Studio designs and builds fast, responsive, SEO-optimized websites for small businesses in South Africa.",
 };
@@ -224,6 +225,6 @@ export const faqs = [
   {
     question: "How do I get started?",
     answer:
-      "Send us a message through the contact form, email alwandewebstudio@gmail.com, or WhatsApp 068 569 8680. We reply within one business day with a free quote.",
+      "Send us a message through the contact form, email alwandewebstudio@gmail.com, or WhatsApp 068 076 2227. We reply within one business day with a free quote.",
   },
 ] as const;

@@ -20,7 +20,7 @@ const faqs = [
   { q: "Do you build landing pages for ads?", a: "We do. Our high-converting landing pages are built for Google and Facebook ad campaigns, with fast load times and clear calls to action." },
   { q: "Do you provide hosting and domains?", a: "We can host and manage your site through our Care & Maintenance plans, register your .co.za domain, or deploy to your preferred provider." },
   { q: "Do you write the content for my site?", a: "We can. Our Premium package includes copywriting support, and we offer add-on copywriting for the other packages." },
-  { q: "How do I get started?", a: "Send us a message through the contact form, email alwandewebstudio@gmail.com, or WhatsApp 068 569 8680. We reply within one business day with a free quote." },
+  { q: "How do I get started?", a: "Send us a message through the contact form, email alwandewebstudio@gmail.com, or WhatsApp 068 076 2227. We reply within one business day with a free quote." },
 ];
 
 export const Route = createFileRoute("/faq")({
