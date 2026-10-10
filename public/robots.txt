@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://dlamini-web-studio.lovable.app/sitemap.xml
+Sitemap: https://alwandentando300-cyber-dlamini-digi.vercel.app/sitemap.xml

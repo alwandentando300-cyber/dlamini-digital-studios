@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import type {} from "@tanstack/react-start";
 
-const BASE_URL = "https://dlamini-web-studio.lovable.app";
+const BASE_URL = "https://alwandentando300-cyber-dlamini-digi.vercel.app";
 
 interface SitemapEntry {
   path: string;
