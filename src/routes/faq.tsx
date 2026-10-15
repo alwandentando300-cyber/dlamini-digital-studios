@@ -13,7 +13,7 @@ import { WHATSAPP_URL } from "@/lib/contact";
 
 const faqs = [
   { q: "How long does it take to build a website?", a: "Most Starter and Business projects launch in 2–4 weeks. E-commerce and Premium builds typically take 4–8 weeks depending on scope." },
-  { q: "How much does a website cost?", a: "Our Starter package begins at R3 500, Business sites are R6 500, and Premium / e-commerce projects start at R12 000. Custom quotes are always available." },
+  { q: "How much does a website cost?", a: "Our Starter package is R1 400, Business sites are R3 500, and Premium / e-commerce projects are R6 500. Domain registration and hosting are charged separately, and custom quotes are always available." },
   { q: "Do you offer SEO services?", a: "Yes. Every website we build includes on-page SEO, structured data, sitemaps and Google Search Console setup. We also offer ongoing SEO retainers." },
   { q: "Will my website work on mobile?", a: "Absolutely. Every site we design is mobile-first and thoroughly tested across phones, tablets and desktops." },
   { q: "Can you redesign my existing website?", a: "Yes — website redesigns are one of our specialities. We modernize your design, improve speed and boost your search rankings without losing your existing traffic." },
