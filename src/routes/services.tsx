@@ -295,6 +295,38 @@ function ServicesPage() {
           ))}
         </div>
 
+        <Reveal className="mt-12">
+          <div className="rounded-3xl border border-border bg-card p-9 shadow-soft md:p-12">
+            <h3 className="font-display text-2xl font-semibold text-foreground">
+              Domain, Hosting and Additional Costs
+            </h3>
+            <p className="mt-4 leading-relaxed text-muted-foreground">
+              The package prices above cover the design and development of your
+              website, according to the features included in each package.
+              Domain registration, website hosting and recurring renewal fees
+              are charged separately and are not included in the package
+              prices.
+            </p>
+            <p className="mt-4 leading-relaxed text-muted-foreground">
+              These costs may vary depending on the provider, the domain name
+              and the hosting plan you choose. You will always be informed of
+              the applicable costs before you approve a quote or agree to
+              proceed with your project.
+            </p>
+            <p className="mt-4 leading-relaxed text-muted-foreground">
+              Where possible, you can purchase and manage your own domain and
+              hosting accounts, so they stay in your name. If you need help
+              setting them up, you can request a quote for this service.
+            </p>
+            <p className="mt-6 flex items-start gap-2.5 rounded-2xl bg-muted p-5 text-sm leading-relaxed text-foreground">
+              <Check className="mt-0.5 h-4 w-4 flex-none text-[color:var(--emerald-brand)]" />
+              Alwande Web Studio believes in transparent pricing — there are no
+              hidden charges. Any additional services or costs will always be
+              communicated to you and approved by you before work begins.
+            </p>
+          </div>
+        </Reveal>
+
         <Reveal className="mt-10">
           <div className="overflow-hidden rounded-3xl border border-border bg-[color:var(--navy)] p-9 text-white md:p-12">
             <div className="grid items-center gap-8 md:grid-cols-[minmax(0,1fr)_auto]">
