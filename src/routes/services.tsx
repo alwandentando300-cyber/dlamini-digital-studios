@@ -24,7 +24,7 @@ export const Route = createFileRoute("/services")({
       {
         name: "description",
         content:
-          "Custom web design, website redesigns, landing pages, SEO, e-commerce and care plans for South African small businesses. Transparent pricing from R3 500.",
+          "Custom web design, website redesigns, landing pages, SEO, e-commerce and care plans for South African small businesses. Transparent pricing from R1 400.",
       },
       { property: "og:title", content: "Web Design, SEO & E-Commerce Services | Alwande Web Studio" },
       {
@@ -49,7 +49,7 @@ export const Route = createFileRoute("/services")({
             category: "Web Design",
             offers: {
               "@type": "Offer",
-              price: "3500",
+              price: "1400",
               priceCurrency: "ZAR",
               availability: "https://schema.org/InStock",
               url: "https://alwandewebstudio.co.za/services",
@@ -65,7 +65,7 @@ export const Route = createFileRoute("/services")({
             category: "Web Design",
             offers: {
               "@type": "Offer",
-              price: "6500",
+              price: "3500",
               priceCurrency: "ZAR",
               availability: "https://schema.org/InStock",
               url: "https://alwandewebstudio.co.za/services",
@@ -81,7 +81,7 @@ export const Route = createFileRoute("/services")({
             category: "Web Design",
             offers: {
               "@type": "Offer",
-              price: "12000",
+              price: "6500",
               priceCurrency: "ZAR",
               availability: "https://schema.org/InStock",
               url: "https://alwandewebstudio.co.za/services",
@@ -166,7 +166,7 @@ const services = [
 const tiers = [
   {
     name: "Starter",
-    price: "R3 500",
+    price: "R1 400",
     tagline: "Perfect for new small businesses.",
     features: [
       "Up to 5 pages",
@@ -178,7 +178,7 @@ const tiers = [
   },
   {
     name: "Business",
-    price: "R6 500",
+    price: "R3 500",
     tagline: "Our most popular package.",
     featured: true,
     features: [
@@ -192,7 +192,7 @@ const tiers = [
   },
   {
     name: "Premium",
-    price: "From R12 000",
+    price: "R6 500",
     tagline: "For scaling brands and online stores.",
     features: [
       "Unlimited pages",
