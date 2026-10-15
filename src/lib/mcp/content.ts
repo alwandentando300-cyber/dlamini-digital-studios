@@ -85,7 +85,7 @@ export const services = [
 export const pricing = [
   {
     name: "Starter",
-    price: "R3 500",
+    price: "R1 400",
     tagline: "Perfect for new small businesses.",
     features: [
       "Up to 5 pages",
@@ -97,7 +97,7 @@ export const pricing = [
   },
   {
     name: "Business",
-    price: "R6 500",
+    price: "R3 500",
     tagline: "Our most popular package.",
     featured: true,
     features: [
@@ -111,7 +111,7 @@ export const pricing = [
   },
   {
     name: "Premium",
-    price: "From R12 000",
+    price: "R6 500",
     tagline: "For scaling brands and online stores.",
     features: [
       "Unlimited pages",

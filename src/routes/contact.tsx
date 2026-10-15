@@ -58,9 +58,9 @@ const serviceOptions = [
 ];
 
 const budgetOptions = [
-  "Starter — around R3 500",
-  "Business — around R6 500",
-  "Premium — R12 000+",
+  "Starter — around R1 400",
+  "Business — around R3 500",
+  "Premium — R6 500",
   "I'd like a custom quote",
 ];
 

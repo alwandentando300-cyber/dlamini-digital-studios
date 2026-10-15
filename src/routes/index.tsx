@@ -39,7 +39,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Alwande Web Studio builds fast, responsive, SEO-optimized websites for South African small businesses. Free quotes from R3 500 — WhatsApp 068 076 2227.",
+          "Alwande Web Studio builds fast, responsive, SEO-optimized websites for South African small businesses. Free quotes from R1 400 — WhatsApp 068 076 2227.",
       },
       {
         property: "og:title",
