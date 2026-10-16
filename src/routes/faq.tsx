@@ -90,7 +90,7 @@ function FAQPage() {
         <Reveal className="mt-12 text-center">
           <p className="text-muted-foreground">Still have questions?</p>
           <div className="mt-4 flex flex-wrap justify-center gap-3">
-            <Button asChild size="lg" className="btn-shine rounded-full shadow-glow transition-transform duration-300 hover:-translate-y-0.5">
+            <Button asChild size="lg" className="btn-shine rounded-lg shadow-glow transition-transform duration-300 ">
               <Link to="/contact">
                 Get in touch <ArrowRight className="ml-1 h-4 w-4" />
               </Link>

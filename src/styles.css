@@ -57,12 +57,12 @@
   --color-sidebar-ring: var(--sidebar-ring);
 
   --shadow-soft: 0 4px 20px -4px color-mix(in oklab, var(--navy) 8%, transparent);
-  --shadow-elegant: 0 20px 50px -20px color-mix(in oklab, var(--navy) 18%, transparent);
-  --shadow-glow: 0 10px 40px -10px color-mix(in oklab, var(--royal) 35%, transparent);
+  --shadow-elegant: 0 12px 32px -16px color-mix(in oklab, var(--navy) 16%, transparent);
+  --shadow-glow: 0 1px 2px color-mix(in oklab, var(--navy) 12%, transparent);
 }
 
 :root {
-  --radius: 0.875rem;
+  --radius: 0.625rem;
 
   /* Brand palette — strictly Navy, Royal, White, Light Grey, Emerald */
   --navy: #0F172A;
@@ -156,8 +156,9 @@
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-display);
-    letter-spacing: -0.02em;
+    letter-spacing: -0.015em;
     font-weight: 600;
+    line-height: 1.15;
   }
 }
 
@@ -189,10 +190,10 @@
 /* Scroll reveal (driven by IntersectionObserver in <Reveal />) */
 .reveal {
   opacity: 0;
-  transform: translateY(24px);
+  transform: translateY(8px);
   transition:
-    opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
-    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+    opacity 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
   will-change: opacity, transform;
 }
 
@@ -212,52 +213,14 @@
 /* Premium CTA with animated sheen */
 @utility btn-shine {
   position: relative;
-  overflow: hidden;
-  isolation: isolate;
-
-  &::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-      110deg,
-      transparent 25%,
-      color-mix(in oklab, white 45%, transparent) 50%,
-      transparent 75%
-    );
-    transform: translateX(-120%);
-    transition: transform 0.75s ease;
-    pointer-events: none;
-  }
-
-  &:hover::after {
-    transform: translateX(120%);
-  }
 }
 
 @utility text-gradient-brand {
-  background-image: linear-gradient(
-    100deg,
-    var(--royal),
-    var(--emerald-brand) 90%
-  );
-  background-clip: text;
-  color: transparent;
+  color: var(--royal);
 }
 
 @utility bg-grid-soft {
-  background-image:
-    linear-gradient(
-      to right,
-      color-mix(in oklab, var(--navy) 6%, transparent) 1px,
-      transparent 1px
-    ),
-    linear-gradient(
-      to bottom,
-      color-mix(in oklab, var(--navy) 6%, transparent) 1px,
-      transparent 1px
-    );
-  background-size: 56px 56px;
+  background-image: none;
 }
 
 @utility card-lift {
@@ -267,7 +230,7 @@
     border-color 0.3s ease;
 
   &:hover {
-    transform: translateY(-6px);
+    transform: translateY(-2px);
     box-shadow: var(--shadow-elegant);
     border-color: color-mix(in oklab, var(--royal) 35%, transparent);
   }

@@ -10,7 +10,6 @@ import {
   ShoppingBag,
   Wrench,
   Star,
-  Sparkles,
   Phone,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -115,25 +114,15 @@ function HomePage() {
     <>
       {/* HERO */}
       <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-grid-soft opacity-[0.35]" aria-hidden="true" />
-        <div
-          className="absolute -left-40 -top-40 h-[28rem] w-[28rem] rounded-full bg-primary/12 blur-3xl"
-          aria-hidden="true"
-        />
-        <div
-          className="absolute -right-32 top-24 h-[24rem] w-[24rem] rounded-full bg-[color:var(--emerald-brand)]/12 blur-3xl"
-          aria-hidden="true"
-        />
 
         <div className="container-page relative py-20 md:py-28 lg:py-32">
           <div className="grid items-center gap-14 lg:grid-cols-2">
             <div className="fade-up">
-              <span className="inline-flex items-center gap-2 rounded-full border border-border bg-background/80 px-3.5 py-1.5 text-xs font-semibold uppercase tracking-[0.14em] text-primary shadow-soft backdrop-blur">
-                <Sparkles className="h-3.5 w-3.5 text-[color:var(--emerald-brand)]" />
+              <span className="text-sm font-medium text-primary">
                 South African web design studio
               </span>
 
-              <h1 className="mt-6 text-balance font-display text-4xl font-semibold leading-[1.08] tracking-tight text-foreground sm:text-5xl lg:text-[3.5rem]">
+              <h1 className="mt-6 text-balance font-display text-4xl font-semibold leading-[1.08] tracking-tight text-foreground sm:text-5xl">
                 Professional Websites That{" "}
                 <span className="text-gradient-brand">Help Businesses Grow</span>
               </h1>
@@ -148,7 +137,7 @@ function HomePage() {
                 <Button
                   asChild
                   size="lg"
-                  className="btn-shine rounded-full px-7 text-base shadow-glow transition-transform duration-300 hover:-translate-y-0.5"
+                  className="btn-shine rounded-lg px-7 text-base shadow-glow transition-transform duration-300 "
                 >
                   <Link to="/contact">
                     Get a Free Quote <ArrowRight className="ml-1.5 h-4 w-4" />
@@ -158,7 +147,7 @@ function HomePage() {
                   asChild
                   size="lg"
                   variant="outline"
-                  className="rounded-full px-7 text-base transition-transform duration-300 hover:-translate-y-0.5"
+                  className="rounded-lg px-7 text-base transition-transform duration-300 "
                 >
                   <Link to="/portfolio">View Portfolio</Link>
                 </Button>
@@ -275,7 +264,7 @@ function HomePage() {
               <Button
                 asChild
                 size="lg"
-                className="btn-shine rounded-full shadow-glow transition-transform duration-300 hover:-translate-y-0.5"
+                className="btn-shine rounded-lg shadow-glow transition-transform duration-300 "
               >
                 <Link to="/contact">
                   Get a Free Quote <ArrowRight className="ml-1 h-4 w-4" />
@@ -411,7 +400,7 @@ function HomePage() {
                   <Button
                     asChild
                     size="lg"
-                    className="btn-shine rounded-full px-7 text-base shadow-glow transition-transform duration-300 hover:-translate-y-0.5"
+                    className="btn-shine rounded-lg px-7 text-base shadow-glow transition-transform duration-300 "
                   >
                     <Link to="/contact">
                       Get a Free Quote <ArrowRight className="ml-1.5 h-4 w-4" />
@@ -421,7 +410,7 @@ function HomePage() {
                     asChild
                     size="lg"
                     variant="outline"
-                    className="rounded-full border-white/25 bg-transparent px-7 text-base text-white transition-transform duration-300 hover:-translate-y-0.5 hover:bg-white/10 hover:text-white"
+                    className="rounded-full border-white/25 bg-transparent px-7 text-base text-white transition-transform duration-300  hover:bg-white/10 hover:text-white"
                   >
                     <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
                       <MessageCircle className="mr-1.5 h-4 w-4" /> WhatsApp{" "}
