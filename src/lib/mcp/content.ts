@@ -190,7 +190,7 @@ export const faqs = [
   {
     question: "How much does a website cost?",
     answer:
-      "Our Starter package begins at R3 500, Business sites are R6 500, and Premium / e-commerce projects start at R12 000. Custom quotes are always available.",
+      "Our Starter package is R1 400, Business sites are R3 500, and Premium / e-commerce projects are R6 500. Domain registration and hosting are charged separately, and custom quotes are always available.",
   },
   {
     question: "Do you offer SEO services?",
