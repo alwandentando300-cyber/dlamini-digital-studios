@@ -347,7 +347,7 @@ function ServicesPage() {
                 <Button
                   asChild
                   size="lg"
-                  className="btn-shine rounded-full shadow-glow transition-transform duration-300 hover:-translate-y-0.5"
+                  className="btn-shine rounded-lg shadow-glow transition-transform duration-300 "
                 >
                   <Link to="/contact">
                     Request Custom Quote <ArrowRight className="ml-1 h-4 w-4" />

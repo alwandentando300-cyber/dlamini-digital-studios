@@ -15,7 +15,7 @@ export function Section({
   return (
     <section
       id={id}
-      className={`py-24 md:py-32 ${muted ? "bg-[color:var(--surface)]" : ""} ${className}`}
+      className={`py-16 md:py-24 ${muted ? "bg-[color:var(--surface)]" : ""} ${className}`}
     >
       <div className="container-page">{children}</div>
     </section>
@@ -38,17 +38,16 @@ export function SectionHeader({
   const TitleTag = titleAs;
   return (
     <Reveal
-      className={`mb-16 max-w-2xl ${
+      className={`mb-12 max-w-2xl ${
         align === "center" ? "mx-auto text-center" : "text-left"
       }`}
     >
       {eyebrow && (
-        <span className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-3.5 py-1.5 text-xs font-semibold uppercase tracking-[0.14em] text-primary shadow-soft">
-          <span className="h-1.5 w-1.5 rounded-full bg-[color:var(--emerald-brand)]" />
+        <span className="text-sm font-medium text-primary">
           {eyebrow}
         </span>
       )}
-      <TitleTag className="mt-5 text-balance text-3xl font-semibold tracking-tight text-foreground md:text-4xl lg:text-[2.75rem] lg:leading-[1.1]">
+      <TitleTag className="mt-3 text-balance text-3xl font-semibold tracking-tight text-foreground md:text-4xl">
         {title}
       </TitleTag>
       {description && (

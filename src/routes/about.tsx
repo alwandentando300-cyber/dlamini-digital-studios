@@ -81,7 +81,7 @@ function AboutPage() {
               time.
             </p>
             <div className="mt-9 flex flex-wrap gap-3">
-              <Button asChild size="lg" className="btn-shine rounded-full shadow-glow transition-transform duration-300 hover:-translate-y-0.5">
+              <Button asChild size="lg" className="btn-shine rounded-lg shadow-glow transition-transform duration-300 ">
                 <Link to="/contact">
                   Work with us <ArrowRight className="ml-1 h-4 w-4" />
                 </Link>

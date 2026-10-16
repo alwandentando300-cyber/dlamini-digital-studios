@@ -53,7 +53,7 @@ export function SiteNav() {
 
           <a
             href={`tel:${PHONE_TEL}`}
-            className="hidden items-center gap-2 rounded-full border border-border px-4 py-2 text-sm font-medium text-foreground transition-colors hover:border-primary/40 hover:text-primary xl:inline-flex"
+            className="hidden items-center gap-2 rounded-lg border border-border px-4 py-2 text-sm font-medium text-foreground transition-colors hover:border-primary/40 hover:text-primary xl:inline-flex"
           >
             <Phone className="h-4 w-4 text-[color:var(--emerald-brand)]" />
             {PHONE_DISPLAY}
@@ -62,7 +62,7 @@ export function SiteNav() {
           <Button
             asChild
             size="lg"
-            className="btn-shine hidden rounded-full shadow-glow transition-transform duration-300 hover:-translate-y-0.5 md:inline-flex"
+            className="btn-shine hidden rounded-lg shadow-glow transition-transform duration-300  md:inline-flex"
           >
             <Link to="/contact">
               Get a Free Quote <ArrowRight className="ml-1 h-4 w-4" />
@@ -99,7 +99,7 @@ export function SiteNav() {
             <Button
               asChild
               size="lg"
-              className="btn-shine mt-3 rounded-full"
+              className="btn-shine mt-3 rounded-lg"
               onClick={() => setOpen(false)}
             >
               <Link to="/contact">Get a Free Quote</Link>

@@ -129,7 +129,7 @@ function ContactPage() {
                   <Button
                     asChild
                     size="lg"
-                    className="btn-shine rounded-full shadow-glow"
+                    className="btn-shine rounded-lg shadow-glow"
                   >
                     <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
                       <MessageCircle className="mr-1.5 h-4 w-4" /> WhatsApp us
@@ -226,7 +226,7 @@ function ContactPage() {
                   <Button
                     type="submit"
                     size="lg"
-                    className="btn-shine rounded-full shadow-glow transition-transform duration-300 hover:-translate-y-0.5"
+                    className="btn-shine rounded-lg shadow-glow transition-transform duration-300 "
                     disabled={loading}
                   >
                     {loading ? (
